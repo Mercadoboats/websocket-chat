@@ -1,0 +1,76 @@
+<br>
+<div class="container">
+    <div class="row">
+        <!-- Formulario de alta de producto-->
+        <div class="col-9">
+            <div class="card text-center">
+
+                <div class="card-header">
+                    Alta de Productos
+                </div>
+
+                <div class="card-body">
+
+                    <form id="form" class="mb-5" method="POST">
+
+                        <div>
+
+                            <input class="form-control" type="text" id="title" name="title"
+                                placeholder="Ingresar nombre del producto" required>
+                        </div>
+                        <div>
+                            <label for="thumbnail"></label>
+
+                            <input class="form-control" type="number" id="price" name="price"
+                                placeholder="Ingresar precio" required>
+                        </div>
+                        <div>
+                            <label for="thumbnail"></label>
+                            <input class="form-control" type="text" id="thumbnail" name="thumbnail"
+                                placeholder="Ingresar url de la imagen" required>
+                        </div>
+                        <hr>
+                        <div>
+                            <input class="btn btn-danger btn-block " type="submit" value="Guardar">
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Formulario de Mesanjes -->
+
+
+
+        <div class="col-3">
+            <div class="card">
+                <div class="card-body">
+                    <form id="form-mensajes" method="POST">
+                        <h3 class="title">Sistema de Chat</h3>
+                        <div>
+                            <label for="mail">Email</label>
+                            <input class="form-control" type="text" id="email" name="email" required>
+                        </div>
+
+                        <hr>
+                        <small class="form-text ">Mensajes:</small>
+                        <ul id="lista-mensajes"></ul>
+                        <hr>
+
+                        <div>
+                            <label for="mensaje">Mensaje</label>
+                            <input class="form-control" type="text" id="mensaje" name="mensaje" required>
+                        </div>
+                        <hr>
+                        <input class="btn btn-block btn-danger rounded" type="submit" value="Enviar">
+
+                    </form>
+
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
